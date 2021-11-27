@@ -1,0 +1,136 @@
+body, html {
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+.main-background {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(16, 16, 27);
+
+}
+.header-main-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    height: 50px;
+    background: rgb(11, 11, 19);
+    border-bottom: 1px solid rgba(41, 39, 56, 0.63);
+}
+.header-sub-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+
+}
+.header-sub-container h3 {
+
+    color: white;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    transition: 300ms ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* .header-sub-container h3:hover {
+
+    color: rgb(0, 35, 231);
+    cursor: pointer;
+} */
+.header-sub-container:hover > #markthat {
+
+    color: rgb(149, 150, 155) !important;
+    cursor: pointer;
+}
+
+.logo-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+.nav-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.user-account-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end !important;
+    flex: 1;
+}
+.user-account-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 65px;
+    right: 0;
+    margin-right: 5px;
+
+}
+.user-account-container h3 {
+    color: white;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+}
+.user-account-container:hover > #shadowAccount {
+
+    color: rgb(149, 150, 155) !important;
+    cursor: pointer;
+}
+
+.logout-button-icon {
+
+    color: rgb(177, 13, 13);
+    font-size: 20px;
+    margin-left: 15px;
+    transition: 300ms ease-in-out;
+}
+.logout-button-icon:hover {
+
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}
+.user-account-icon {
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    
+}
+
+.header-title {
+
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.rocket-header-logo-icon {
+
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.rocket-header-container-icon {
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 5px;
+    transition: 100ms ease-in-out;
+}
