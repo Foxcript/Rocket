@@ -10,77 +10,79 @@ import { MdLogout } from 'react-icons/md'
 
 export default function Main() {
 
-    return (
-        
-        <div className="main-background">
 
-            <nav className="header-main-container"> 
+        return (
+                
+            <div className="main-background">
 
-                <div className="logo-container">
-                    <div className="header-sub-container">
+                <nav className="header-main-container"> 
 
-                        <IconContext.Provider value={{className:"rocket-header-logo-icon"}}>
-                            <IoIosRocket/>
+                    <div className="logo-container">
+                        <div className="header-sub-container">
+
+                            <IconContext.Provider value={{className:"rocket-header-logo-icon"}}>
+                                <IoIosRocket/>
+                            </IconContext.Provider>
+
+                            <h2 className="header-title">Rocketzy</h2>
+
+                        </div>
+                    </div>
+
+                    <div className="nav-container">
+                        <div className="header-sub-container">
+                            
+                            <IconContext.Provider id="markthat" value={{className:"rocket-header-container-icon"}}>
+                                <IoRocketOutline id="markthat"/>
+                            </IconContext.Provider>
+                            <h3 id="markthat">Lauch Vehicles</h3>
+                            
+                        </div>
+                        <div className="header-sub-container">
+                            
+                            <IconContext.Provider  value={{className:"rocket-header-container-icon"}}>
+                                <IoNewspaperOutline id="markthat"/>
+                            </IconContext.Provider>
+                            <h3 id="markthat">News</h3>
+                            
+                        </div>
+                        <div className="header-sub-container">
+                            
+                            <IconContext.Provider value={{className:"rocket-header-container-icon"}}>
+                                <GiMarsCuriosity id="markthat"/>
+                            </IconContext.Provider>
+                            <h3 id="markthat">Missions</h3>
+                            
+                        </div>
+                        <div className="header-sub-container">
+                            
+                            <IconContext.Provider value={{className:"rocket-header-container-icon"}}>
+                                <FaInfoCircle id="markthat"/>
+                            </IconContext.Provider>
+                            <h3 id="markthat">About</h3>
+                            
+                        </div>
+                    </div>
+
+                    <div className="user-account-container">
+
+
+                    <div className="user-account-container">
+
+                        <IconContext.Provider value={{className:"user-account-icon"}}>
+                            <FaUserAstronaut id="shadowAccount"/>
                         </IconContext.Provider>
-
-                        <h2 className="header-title">Rocketzy</h2>
+                        <h3 id="shadowAccount">Railson</h3>
+                        <IconContext.Provider value={{className:"logout-button-icon"}}>
+                            <MdLogout title="Logout" />
+                        </IconContext.Provider>               
+                    </div>
 
                     </div>
-                </div>
 
-                <div className="nav-container">
-                    <div className="header-sub-container">
-                        
-                        <IconContext.Provider id="markthat" value={{className:"rocket-header-container-icon"}}>
-                            <IoRocketOutline id="markthat"/>
-                        </IconContext.Provider>
-                        <h3 id="markthat">Rockets</h3>
-                        
-                    </div>
-                    <div className="header-sub-container">
-                        
-                        <IconContext.Provider  value={{className:"rocket-header-container-icon"}}>
-                            <IoNewspaperOutline id="markthat"/>
-                        </IconContext.Provider>
-                        <h3 id="markthat">News</h3>
-                        
-                    </div>
-                    <div className="header-sub-container">
-                        
-                        <IconContext.Provider value={{className:"rocket-header-container-icon"}}>
-                            <GiMarsCuriosity id="markthat"/>
-                        </IconContext.Provider>
-                        <h3 id="markthat">Running Space Projects</h3>
-                        
-                    </div>
-                    <div className="header-sub-container">
-                        
-                        <IconContext.Provider value={{className:"rocket-header-container-icon"}}>
-                            <FaInfoCircle id="markthat"/>
-                        </IconContext.Provider>
-                        <h3 id="markthat">About</h3>
-                        
-                    </div>
-                </div>
-
-                <div className="user-account-container">
-
-
-                 <div className="user-account-container">
-
-                     <IconContext.Provider value={{className:"user-account-icon"}}>
-                         <FaUserAstronaut id="shadowAccount"/>
-                     </IconContext.Provider>
-                     <h3 id="shadowAccount">Railson</h3>
-                     <IconContext.Provider value={{className:"logout-button-icon"}}>
-                         <MdLogout title="Logout" />
-                     </IconContext.Provider>               
-                 </div>
-
-                </div>
-
-            </nav>
-             
-        </div>
-    )
+                </nav>
+                
+            </div>
+        )
+ 
 }
