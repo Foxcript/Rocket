@@ -10,6 +10,9 @@ import { GiMarsCuriosity } from 'react-icons/gi';
 import { FaInfoCircle, FaUserAstronaut } from 'react-icons/fa'
 import { MdLogout } from 'react-icons/md'
 
+import { createBrowserHistory } from "history";
+let history = createBrowserHistory();
+
 export default function Rockets() {
 
     function ShowSearch() {
@@ -26,13 +29,19 @@ export default function Rockets() {
         }
 
     }
+    function GoToNews() {
+
+        history.push('/news');
+        window.location.reload()
+
+    }
 
 
         return (
 
             <div className="main-rockets-background">
 
-                /* SEARCH CONTAINER */
+                {/* SEARCH CONTAINER */}
                 <div id="search" className="search-main-background-container hide">
 
                     <div className="search-main-container">
@@ -81,7 +90,7 @@ export default function Rockets() {
                                 <h3 id="markthat">Search</h3>
                                 
                             </div>
-                            <div className="header-sub-container">
+                            <div onClick={ ()=> GoToNews()} className="header-sub-container">
                                 
                                 <IconContext.Provider  value={{className:"rocket-header-container-icon"}}>
                                     <IoNewspaperOutline id="markthat"/>
@@ -131,7 +140,7 @@ export default function Rockets() {
 
                         <div className="body-rocket-left-container">
 
-                            {/* #### ONLY FOR INITIAL DESIGN CONCEPT, WILL CHANGE WITH BACKEND BUILD. THE ACTUAL INFO ON CARDS ARE EXAMPLE! #### */}
+                            {/* #### ONLY FOR INITIAL DESIGN CONCEPT, WILL CHANGE WITH BACKEND BUILD. THE ACTUAL INFO ON CARDS ARE EXAMPLES! #### */}
                             <div className="card-rocket-main-container">
                                 
                                 <img className="rocket-image" src="https://space.skyrocket.de/img_lau/falcon-9-v1-2__iridium-next-1__1.jpg" alt="rocket"/>

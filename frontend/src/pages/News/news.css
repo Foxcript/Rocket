@@ -1,0 +1,116 @@
+.news-main-background {
+
+    height: 100%;
+    width: 100%;
+    background: rgb(16, 16, 27);
+}
+
+.nav-mark-news::after {
+
+    display: flex;
+    content: "";
+    height: 3px;
+    width: 50px;
+    background: rgb(21, 42, 179);
+    border-radius: 90px;
+
+}
+.body-main-news-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    flex-wrap: wrap;
+
+}
+.body-card-news-container {
+
+    display: flex;
+    margin: 5px;
+    border: 1px solid rgba(119, 119, 119, 0.404);
+    background: rgb(16, 16, 27);
+    height: 300px;
+    width: 300px;
+    border-radius: 5px ;
+    animation: LoadIn 700ms ease-in-out;
+    z-index: 0;
+}
+.body-main-news-container a {
+
+    text-decoration: none;
+    color: white;
+
+}
+.body-main-news-container img {
+
+    display: flex;
+    width: 300px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 5px 5px 0 0;
+}
+.body-main-news-container h1 {
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5px 0 0 5px;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 15px;
+    
+
+}
+.body-main-news-container h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 0 5px;
+}.body-main-news-container p {
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+
+    .body-card-news-container {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid rgba(119, 119, 119, 0.404);
+    }
+    .body-card-news-container img {
+
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .body-card-news-container h1 {
+        font-size: 18px;
+    }
+
+
+}
+
+@keyframes LoadIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(-10px);
+
+    }
+    to {
+
+        opacity: 100;
+        transform: translateY(0);
+
+    }
+}

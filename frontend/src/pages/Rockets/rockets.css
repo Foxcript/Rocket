@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 55px;
+    margin-top: 50px;
 
 }
 .body-rocket-sub-container {
@@ -48,6 +48,7 @@ body {
     margin: 10px 0 10px 10px;
     background: rgb(19, 21, 32);
     flex-wrap: nowrap;
+    animation: LoadIn 700ms ease-in-out;
 
 }
 .card-rocket-main-container:hover {
@@ -62,7 +63,7 @@ body {
     content: "";
     height: 3px;
     width: 120px;
-    background: rgb(172, 175, 194);
+    background: rgb(21, 42, 179);
     border-radius: 90px;
 
 }
@@ -108,10 +109,9 @@ body {
    position: absolute;
    align-items: center;
    justify-content: center;
-   height: 60px;
+   height: 70px;
    width: 100%;
-   margin-top: 55px;
-   background: rgba(23, 24, 32, 0.849);
+   background: rgba(0, 0, 0, 0.849);
    transition: 500ms ease-in-out;
 }
 
@@ -138,7 +138,7 @@ body {
 
 .hide {
 
-    margin-top: -95px;
+    margin-top: -75px;
 
 }
 .show {
@@ -209,7 +209,23 @@ body {
 
     .hide {
 
-        bottom: -500px;
+        bottom: -150px;
     
+    }
+}
+
+@keyframes LoadIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(-10px);
+
+    }
+    to {
+
+        opacity: 100;
+        transform: translateY(0);
+
     }
 }
