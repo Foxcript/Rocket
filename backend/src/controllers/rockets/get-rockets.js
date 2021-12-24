@@ -27,6 +27,17 @@ module.exports = {
 
                 const response = await Rockets.findAll({
                     
+                    attributes: [
+
+                        ['rocId', 'id'],
+                        ['rocName', 'name'],
+                        ['rocHeight', 'height'],
+                        ['rocWidth', 'width'],
+                        ['rocVersion', 'version'],
+                        ['rocMass', 'mass'],
+                        ['rocReusable', 'reusable']
+
+                    ],
 
                     where: {
 

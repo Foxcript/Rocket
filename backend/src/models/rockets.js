@@ -7,8 +7,7 @@ const Rockets = sequelize.define('rockets', {
 
         type: Sequelize.INTEGER,
         primaryKey: true,
-        autoIncrement: true,
-        allowNull: false
+        autoIncrement: true
 
     },
 
@@ -76,13 +75,13 @@ const Rockets = sequelize.define('rockets', {
 
     rocFirstFlight: {
 
-        type: Sequelize.DATEONLY
+        type: Sequelize.DATE
 
     },
 
     rocStartProject: {
 
-        type: Sequelize.DATEONLY
+        type: Sequelize.DATE
 
     },
 
@@ -104,7 +103,7 @@ const Rockets = sequelize.define('rockets', {
      *      height: 0.0, // 0.0m
      *      width: 0.0   // 0.0m
      *    },
-     * 
+     *    
      *    orbits: {
      *      GEO: {
      *       payloadMass: 0.000 // 0.000kg (for all)
