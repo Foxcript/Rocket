@@ -1,9 +1,10 @@
 const Sequelize = require('sequelize');
-const { db, host } = require('../auth/auth-file')
+const data = require('../auth/auth-file')
+const { db, server } = data;
 
 const sequelize = new Sequelize(db.dbname, db.username, db.passwd, {
 
-    host: host.address,
+    host: server.address,
     port: db.port,
     dialect: "mysql",
     

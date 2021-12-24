@@ -145,3 +145,5 @@ const Rockets = sequelize.define('rockets', {
     freezeTableName: true
 
 })
+
+module.exports = Rockets;
